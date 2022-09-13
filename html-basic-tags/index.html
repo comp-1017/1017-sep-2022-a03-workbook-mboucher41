@@ -70,41 +70,71 @@
                 items in the list are indicated using the line item <li>
                 lists can be nested and mixed
         -->
-           <p>add an extension Live Server for Go Live execution within VSC</p>
-           <ol>
-                <li>Open VSC and select your extension icon</li>
-                <li>Select (if screen) or search for Live Server in the extension list</li>
-                <li>Press the install button</li>
-                <li>After the install, check blue button status line right corner for the button text to go live</li>
+        <p>add an extension Live Server for Go Live execution within VSC</p>
+        <ol>
+            <li>Open VSC and select your extension icon</li>
+            <li>Select (if screen) or search for Live Server in the extension list</li>
+            <li>Press the install button</li>
+            <li>After the install, check blue button status line right corner for the button text to go live</li>
                     
-                <li>To use Go Live:
-                  <ul>
-                      <li>Open an html file</li>
-                      <li>Make any adjustments to your page</li>
-                      <li>Save the changes</li>
-                      <li>Press Go Live</li>
+            <li>To use Go Live:
+                <ul>
+                    <li>Open an html file</li>
+                    <li>Make any adjustments to your page</li>
+                    <li>Save the changes</li>
+                    <li>Press Go Live</li>
 
-                     </ul>
-                </li>
-            </ol> 
+                    </ul>
+            </li>
+        </ol> 
 
-            <h3>Anchor tag (a.k.a. link to another page)</h3>
+        <h3>Anchor tag (a.k.a. link to another page)</h3>
+        <!--
+            this is an anchor tag and is often incorrectly referred to as
+                a link tag
+            One should not use the phrase link tag because there is
+                actualy a <link> tag used in the <head> area
+            The anchor tage can take you to
+                    - a different website
+                    - a different web page within the same website
+                    - a different location on the same web page
+
+            Parameters:
+            href: points to the desired location
+            target: optional
+                    default is same browser display page
+            _blank: will open the destination in a new browser tab (page)                
+        -->
+        <a href="https://www.nait.ca" target = "_blank">Go to NAIT</a>
+
+        <h3>Image tag</h3>
+        <!--
+            Empty (void) tag
+            The image tag does not have a closing tag because there is
+                no content to display
+            Parameters:
+                src="relative web site location"
+                alt="printable text if image is not found on file"
+                [title="tool tip text for the image"]
+
+            The relative path is from the top of your web site
+                down/up to the file/page you desire to reference
+                
+            Down: include all subfolder names and the final file name
+                sf1/sf2/..../fn
+                
+            Up: use the string .. to go up a level (subfolder)
+                ../../sf1/fns
+        -->
+            <img src="img/photoshop.png" alt="Photohshop Logo"
+                 title="The Adobe Photoshop Logo">
+
             <!--
-                this is an anchor tag and is often incorrectly referred to as
-                    a link tag
-                One should not use the phrase link tag because there is
-                    actualy a <link> tag used in the <head> area
-                The anchor tage can take you to
-                        - a different website
-                        - a different web page within the same website
-                        - a different location on the same web page
-
-                Parameters:
-                href: points to the desired location
-                target: optional
-                        default is same browser display page
-                _blank: will open the destination in a new browser tab (page)                
+                can i use an image as the link to the www.adobe.com page?
             -->
-            <a href="https://www.nait.ca" target = "_blank">Go to NAIT</a>
+            
+            <a href = "https://www.adobe.com" target = "_blank" ><img src="img/photoshop.png" alt="Photohshop Logo"
+                title="Go to www.adobe.com" style="width:80px; height:80px;"></a>
+
     </body>
 </html>
