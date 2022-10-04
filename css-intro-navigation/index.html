@@ -18,7 +18,7 @@
             </nav>
         </header>   
         <main>
-            <section>
+            <aside>
                 <h2>Create Navigational Links Within A Website</h2>
                 <p>There are several techniques to navigate within a website. 
                     The semantic tag for navigation is the &lt;nav&gt; tag. You can
@@ -37,7 +37,46 @@
                      untitled section. Until you are shown how to avoid this error message, 
                      it will be acceptable on yourdocument outline.
                 </p>
-
+            </aside>
+            <section>
+                <h2>CSS Coding Styles Summary</h2>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td>Browser Defaults (No CSS)</td>
+                            <td width="400px">You have no control over the styling</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Inline</td>
+                            <td>This is for a single specific element (tag) instance. 
+                                Your css will be specified in a parameter within the element.
+                             This css affects only the element tag that contains the specification.</td>
+                            <td>style="rule; [rule; ...]"</td>
+                            <td>&lt;p style="color:red; width:50px;"&gt;...&lt;/p&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Embedded</td>
+                            <td>The specification of css as embedded happens in your &lt;head&gt; area. 
+                                This ccs affects all similar elements on the web page where the css is coded
+                            </td>
+                            <td>&lt;style&gt; selector{rule; [rule; ...]} [selector{rule; [rule; ...]} ...]&lt;/style&gt;</td>
+                            <td>&lt;style&gt; p {color:red; width:50px;}<br>
+                                h1 {font-style:italic}&lt;/style&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Link (StyleSheet)</td>
+                            <td>This is the preferred method of doing css. You place your css in a 
+                                seperate physical file. This file can then be used on ANY web page in your website.
+                                The link to this file will be done in your &lt;head&gt; area. The css in this
+                                file is similar to embedded EXCEPT there is no style tag.
+                            </td>
+                            <td>selector{rule; [rule; ...]} [selector{rule; [rule; ...]} ...]</td>
+                            <td>p {color:red; width:50px;}<br> h1 {font-style:italic}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer>
