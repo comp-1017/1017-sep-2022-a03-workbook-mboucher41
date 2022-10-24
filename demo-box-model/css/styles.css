@@ -1,0 +1,106 @@
+/**************************************
+
+margin:
+- the outer most part of the box represents separation between boxes
+- horizontal margins are added together
+- vertical magrins are COLLAPSED, if the verticle margins are positive then the larger of the 2 marins are used
+
+margin can be coded invarious styles
+
+long hand: margin-top: size; margin-right: size; margin-left: size; margin-bottom: size;
+
+equal opposite sides: margin-tb: size; margine-rightleft: size;
+
+short hand unequeal: margin : top-size; right-size bottom-size left-size;
+
+short equal:  margin:size;
+
+**************************************/
+.margin-section{
+    /*margin: 24px 12px;*/
+    margin: 24px 12px 24px 12px;
+}
+
+/**************************************
+
+border: the 2nd part of the box, represents the outer displayable edge of the boxes
+
+border can be coded in various styles
+long hand: border-width: size; border-style: style; border-color: color;
+shorthand: border: size, style, color;
+
+border-width is made up of border-top, border-right, border-bottom, border-left
+
+**************************************/
+
+.border-section{
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+
+}
+
+/**************************************
+
+ADDING: THE INDISE PART OF THE BOX - REPRESENTS The separation between the border and content
+
+padding can be coded in various styles:
+
+long hand: padding-top: size; padding-right: size; padding-left: size; padding-bottom: size;
+
+equal opposite sides: padding-tb: size; padding-rightleft: size;
+
+short hand unequeal: padding : top-size; right-size bottom-size left-size;
+
+short equal:  padding:size;
+
+**************************************/
+
+.padding-section{
+    padding: 24px;
+}
+
+/**************************************
+
+content: by definition this is the display area of your element content
+        the size of the content area is dependant on whether there ate margin, border and/or padding specified
+        for the element.
+    You can specify a width for your content, however, the width
+    plus your other measurements should not exceed the width of the your page.
+    (if the page width is set to a specific value.)
+
+
+ELEMENT WIDTH CALCULATION:
+
+element width = left-margin + left-border + left-padding + content + right-padding + right-border + right-margin
+
+once we start using flex-box which allows for multiple elemnts, the equation is expanded to page width = sum(element widths)
+
+Assume a fixed center page width of 960
+
+    PAGE WIDTH = x + Y + z + CONENT + z + y + x
+
+samples 960 = 0 + 0 + 0 + content + 0 + 0 + 0
+        960 = content + 0
+        960 - 0 = content
+        960 = content
+
+        example:
+        935.5 = 24 + 3 + 12 + content + 12 + 3 + 24
+        935.5 = content + 78
+        935.5 - 78 = content
+        857.5 = content
+
+        My screen:
+        1000.8 = 24 + 3 + 12 + content + 12 + 3 + 24
+        1000.8 = content + 78
+        1000.8 - 78 = content
+        922.8 = content
+
+**************************************/
+
+.width-section{
+    margin:24px;
+    padding:12px;
+    border:3px solid blue;
+}
