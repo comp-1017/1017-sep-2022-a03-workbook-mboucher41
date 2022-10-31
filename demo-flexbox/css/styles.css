@@ -7,7 +7,8 @@ body {
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5
+    line-height: 1.5;
+    
 }
 
 
@@ -33,4 +34,99 @@ body {
 
 .clearfix {
     *zoom: 1;
+}
+/**************************************************************
+    default dsplay of elements on your page is called "stacked"
+
+    to get your elements on the same line we use something called flexbox
+    to invoke flaxbox use the rule:
+
+    display:flex;
+
+    flexbox attempts to place all elements within it's immediate specified container area on the same line
+    
+    Immediate?? - the next level of elements
+
+    flexbox will automatically adjust measurements to get all elements to appear on the same line regardless of the physical width set for the element
+
+    I dont wal all elemnts on the same line having their measurements altered
+
+    solution: alter the default wrapping for flexbox which is none
+
+    rule: flex-wrap: wrap;
+
+    this will place as many elements as possible on a single row without adjusting the measurements of your elements
+    any left over elements will wrap to the following line until all elements have been displayed
+
+    WARNING: flex wrap affects a flex display area. without the display: flex; rule, flex-wrap is meaningless
+
+
+    flexbox will affect positioning that is normal within your page, such as margin collapsing 
+
+***************************************************************/
+
+main{
+    background-color: lightgray;
+    display:flex;
+    flex-wrap: wrap;  
+    border: 2px solid green;
+   
+}
+
+/*footer{
+    background-color: lightgray;
+    display:flex;
+}*/
+
+/*
+give the classes some height and width do to the fact that the elements do not contain any textural content
+set height to a chosen value of 300px
+set the width of each box to fit the final given image
+
+margin : 30px
+padding and border = 0;
+page width is 960;
+
+page width = (box) + (box) + remainder
+
+our boxes are equal in size so we can go number of boxes * box
+page-width = n * (box) + remainder
+960 = 2 * (box width) + (Lm + Lb + lP + Rp + Rb + Rm)
+960 = 2 * (30 + 0 + 0 + content + 0 + 0 + 0) + 30
+960 = 60 + 30 + 2content
+960 - 90 = 2content
+870 = 2content
+870 / 2 = content
+435 = content
+*/
+
+.red-paint{
+    height: 300px;
+    width: 435px;
+    background-color:red;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border: 2px solid green;
+}
+.blue-paint{
+    height: 300px;
+    width: 435px;
+    background-color:blue;
+    margin: 30px 0px 0px 30px;
+    border: 2px solid green;
+    
+}
+/*
+960 = 30 + content + 30
+960 - 60 = content
+900 = content
+*/
+.black-paint{
+    height: 50px;
+    width: 900px;
+    background-color:black;
+    margin: 30px 0px 30px 30px;
+    border: 2px solid green;
+    
 }
