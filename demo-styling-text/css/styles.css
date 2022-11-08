@@ -1,11 +1,66 @@
 body {
 	background-color: #fafafa;
 }
- 
+ /************************************************************
+ Text-align is NOT part of our framework skeleton
+ ************************************************************/
 .container {
 	margin: 0 auto;
 	width: 960px;
 	font-size: 100%;
 	line-height: 1.5;
 	text-align: center;
+	font-family: 'Merriweather', serif;
+	border: 1px solid blue;
+}
+/*************************************************************
+	Typograhpy (aka text styling)
+*************************************************************/
+.page-header{
+	font-size: 48px;
+}
+h1{
+	font-size: 96px;
+	letter-spacing: -1px;
+}
+h2{
+	font-size: 36px;
+	color:#3d4245
+}
+
+
+
+p{
+	font-size: 21px;
+	color: #9b9d9c;
+}
+
+
+
+
+/*************************************************************
+	Layout
+*************************************************************/
+.page-header{
+	margin-top:72px;
+	margin-bottom:120px;
+	
+}
+
+section{
+	margin: 0 10px 196px 10px;
+	border: 2px solid black;
+	padding: 0 24px;
+}
+
+section header img{
+	width:100px;
+}
+
+section footer img{
+	margin: 0 12px;
+}
+
+section p{
+	margin-bottom: 24px;
 }
