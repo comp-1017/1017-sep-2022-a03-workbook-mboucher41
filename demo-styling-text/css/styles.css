@@ -16,9 +16,6 @@ body {
 /*************************************************************
 	Typograhpy (aka text styling)
 *************************************************************/
-.page-header{
-	font-size: 48px;
-}
 h1{
 	font-size: 96px;
 	letter-spacing: -1px;
@@ -28,7 +25,9 @@ h2{
 	color:#3d4245
 }
 
-
+.page-header{
+	font-size: 48px;
+}
 
 p{
 	font-size: 21px;
