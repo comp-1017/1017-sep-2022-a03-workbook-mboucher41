@@ -1,0 +1,82 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	
+}
+
+header{
+	height:70px;
+	background-color: white;
+	border-bottom: 1px solid #959372;
+	background-image: url(../img/pattern-bg.gif);
+}
+
+header h1{
+	display: none;
+}
+/*when you use a class you can assign the class to any number of element tags in your html unlike using element selectors which are specific to that selector*/
+.hidden{
+	display: none;
+}
+header img{
+	margin: 14px;
+}
+
+nav{
+	background-image: url(../img/pattern-bg.gif);
+	height: 690px;
+}
+	
+/*Style the banner
+	move the banner down by using the margin-top
+	added the BG image which has no affect on physyical content size
+	adjusted  height (content height) to image size
+	added padding which caused issue with image
+	adjusted image height again too fix image
+*/
+
+.banner{
+	margin-top:60px;
+	background-image: url(../img/flower-banner.jpg);
+	height: 420px;
+	/*this is for the content area, not the image*/
+	padding: 60px 0 0 680px;
+}
+
+.banner h2{
+	font-family: 'Alegreya', serif;
+	font-style: italic;
+	font-size: 36px;
+	color: #f9ea4f;
+}
+
+/*handle the anchor/nav elements for the menu*/
+
+.banner a{
+	color: #faf9f8;
+	font-size: 18px;
+	text-decoration: none; /*remove underline on an anchor tag*/
+}
+
+/*use the hover psuedo class of the nachor tag to alter the color of the anchor tage text when the cursor is moved over it*/
+.banner a:hover{
+	color:#f9ea4f;
+}
+/*use visited for after the anchor tag has been clicked*/
+.banner a:visited{
+
+}
+/*use active for when the anchor is being clicked*/
+.banner a:active{
+font-size: 30px;
+}
+
+.banner li{
+	line-height: 40px; /*instead of using margins to separate lines of text (the li's), you can use line height*/
+}
