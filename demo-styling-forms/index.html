@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Contact James Shoes</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type='text/css' href="css/reset.css">
@@ -24,6 +24,72 @@
             </nav>
             <h1>Contact Us</h1>
         </header>
+        <main>
+            <form>
+                <div style="display: flex;">
+                    <div style="width: 47%; margin-right: 3%;">
+                        <h2>left column</h2>
+                        <div class="your-name">
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" placeholder="    Your Name">
+                        </div>
+                        <div class="email">
+                            <label for="email">Your Email Address</label>
+                            <input id="email" name="email" type="email" placeholder="    Your Email Address">
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Your Phone Number</label>
+                            <input id="phone" name="phone" type="text" placeholder="    Your Phone Number">
+                        </div>
+                        <div class="message">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="    Your Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div style="width: 47%; margin-right: 3%;">
+                        <h2>right column</h2>
+                        <div class="duedate">
+                            <label for="duedate">Due Date</label>
+                            <input id="duedate" name="duedate" type="date">
+                        </div>
+                        <div class="agree">
+                            <label for="agree">I Agree</label>
+                            <input id="agree" name="agree" type="checkbox">
+                            &nbsp; I accept the terms
+                        </div>
+                        <div class="meal">
+                            <label for="meal">My Meal</label>
+                            <input id="meal" name="meal" type="radio" value="Breakfast">
+                            &nbsp; Breakfast
+                        </div>
+                        <div class="meal">
+                            <input id="meal" name="meal" type="radio" value="Lunch">
+                            &nbsp; Lunch
+                        </div>
+                        <div class="meal">
+                            <input id="meal" name="meal" type="radio" value="Dinner">
+                            &nbsp; Dinner
+                        </div>
+                        <div>
+                            <label for="mygames">BHBHBHBHHBBAHA</label>
+                            <select id="mygames" name="mygames">
+                            <option value="0">Select...</option>
+                            <option value="1">ough</option>
+                            <option value="3">pooop</option>
+                            <option value="4">soup</option>
+                            <option value="2">hexbox</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Send</button>
+                </div>
+
+            </form>
+        </main>
 	</div>
 </body>
 

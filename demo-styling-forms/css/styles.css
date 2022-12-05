@@ -58,3 +58,73 @@ body {
 .hidden {
     display: none;
 }
+
+/*
+styling for the form
+*/
+
+input, button{
+    background-color: #efefef;
+    border: 1px solid #c4c4c4;
+    line-height: 30px;
+    width: 312px;
+    padding:0 24px;
+}
+
+textarea{
+    background-color: #efefef;
+    border: 1px solid #c4c4c4;
+    line-height: 30px;
+    max-width: 312px;
+    max-height:150px;
+    min-height: 150px;
+    padding:0 24px;
+    background-repeat: no-repeat;
+
+}
+
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    font-size: 12px;
+    color: #cacaca;
+    margin-top:24px;
+}
+
+.your-name input{
+    background-image: url(../img/form-name-icon.gif);
+    background-repeat: no-repeat;
+
+}
+
+.email input{
+    background-image: url(../img/form-email-icon.gif);
+    background-repeat: no-repeat;
+
+}
+
+.phone input{
+    background-image: url(../img/form-phone-icon.gif);
+    background-repeat: no-repeat;
+
+}
+.message textarea{
+    background-image: url(../img/form-message-icon.gif);
+    background-repeat: no-repeat;
+
+}
+
+.submit-button button{
+    padding:0;
+    text-align: center;
+    width:120px;
+    color: #8a8a8a;
+    margin-top: 70px;
+    margin-bottom:24px;
+}
+
+.submit-button button:hover{
+    cursor: pointer;
+}
+
